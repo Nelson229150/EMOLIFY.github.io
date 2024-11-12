@@ -1,0 +1,337 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI";
+}
+.topheader {
+  position: relative;
+  background-color: rgba(9, 194, 80, 0.74);
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+.menu-horizontal li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  background-color: #e67e22;
+}
+
+.menu-horizontal li a {
+  display: block;
+  padding: 10px 20px;
+  color: rgb(253, 122, 0);
+  text-decoration: none;
+  font-size: 17px;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(240, 9, 1);
+  border-radius: 20px;
+}
+
+.menu-horizontal li a:hover {
+  color: #fafafa;
+  background-color: #f8cc08;
+}
+
+.menu-vertical {
+  padding: 10px 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 180px;
+  background-color: rgb(224, 151, 15);
+  border-radius: 10px;
+  top: 100%;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+  display: block;
+}
+
+.menu-vertical li {
+  padding: 8px 15px;
+}
+
+.menu-vertical li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  background-color: transparent;
+  border: none;
+}
+
+.menu-vertical li:hover {
+  background-color: #d6b317;
+}
+
+.adn-tridente-section {
+  background-image: url("IMGG/emoliente.png");
+  background-size: 140%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding: 100px;
+}
+
+.content-adn {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex_start;
+  margin-bottom: 20px;
+}
+
+.text-video {
+  width: 45%;
+}
+
+.text-video h2 {
+  font-size: 2.3rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 55%;
+  height: 0;
+  overflow: hidden;
+  max-width: 90%;
+  border: 5px solid rgb(240, 128, 1);
+  border-radius: 15px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.adn-info {
+  width: 50%;
+  margin-top: 0;
+}
+
+.adn-info h3 {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.adn-info p {
+  margin-bottom: 60px;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  text-align: justify;
+}
+
+/*sectio form*/
+.Inscription-seccion {
+  background-color: rgba(12, 240, 99, 0.74);
+  padding: 40px 20px;
+  margin-top: 0px;
+}
+.Container-inscripcion {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+form fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+form legend {
+  font-size: 1.5 rem;
+  font-weight: bold;
+  display: inline-block;
+  color: rgb(163, 163, 163);
+  margin-bottom: 20px;
+  text-align: center;
+}
+form .select-corta {
+  width: 250px; /* Ajusta el valor según lo necesites */
+}
+form ol {
+  list-style: none;
+  padding-left: 0;
+}
+form li {
+  margin-bottom: 20px;
+}
+form label {
+  font-weight: bold;
+  display: inline-block;
+  width: 150px;
+}
+form input[type="text"],
+form select {
+  width: calc(100% - 160px);
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid rgb(1, 226, 69);
+  border-radius: 5px;
+}
+
+form input[type="radio"],
+form select {
+  margin-left: 10px;
+}
+form .btn-frm-ins {
+  background-color: rgb(223, 192, 14);
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+form .btn-frm-ins:hover {
+  background-color: rgb(255, 238, 0);
+  color: white;
+}
+p {
+  text-align: center;
+}
+
+.footer-section {
+  background-color: #05885c;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  width: 20%;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgb(224, 151, 15);
+  padding-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-line {
+  border: 0;
+  height: 2px;
+  background-color: rgb(240, 128, 1);
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+/* Redes Sociales */
+.Container_SN {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  right: -130px;
+  top: 230px;
+  width: 210px;
+  z-index: 1100;
+}
+.Banner_SN li {
+  list-style-type: none;
+  opacity: 1;
+  background-color: rgb(240, 128, 1);
+  color: #2f4f2f;
+  height: 43px;
+  padding: 0;
+  margin: 0;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
+}
+.Banner_SN li:hover {
+  margin-left: -115px;
+  background-color: rgb(224, 151, 15);
+}
+.Banner_SN li img {
+  float: left;
+  margin: 5px 5px;
+  margin-right: 5px;
+}
+.Banner_SN li p {
+  padding-top: 5px;
+  margin: 0;
+  line-height: 16px;
+  font-size: 10px;
+  text-align: left;
+  width: 160px;
+}
+.Banner_SN li p a {
+  text-decoration: none;
+  color: darkblue;
+  color: #2f4f2f;
+  font-weight: bold;
+}
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.team-box {
+  width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
